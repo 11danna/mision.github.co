@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    min-height: 1vh;
+    background: url('img/fondo-azul.jpg')
+        no-repeat center center ;
+    background-size: cover;
+    color: white;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #002e53;
+}
+
+.contenedor {
+    max-width: 1000px; /* Controla el ancho máximo */
+    margin: 100px auto; /* Centrado horizontal */
+    padding: 40px;
+    text-align: center;
+    color:white;
+    font-family: Arial, sans-serif;
+    
+  
+}
+.entradas {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: #030053;
+}
+.tipos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible */
+    gap: 20px;
+    justify-items: center;
+}
+.item ,.item2{
+    text-align: center;
+    background-color: #030053;
+    padding: 10px;
+    border: 1px double black;
+    /* Añade esta línea para que los botones se posicionen respecto al item */
+    position: relative;
+    /* Asegura que el item sea lo suficientemente alto para el contenido y el botón */
+    min-height: 200px; /* Ajusta este valor según sea necesario */
+    display: flex; /* Para organizar el contenido verticalmente */
+    flex-direction: column; /* Para organizar el contenido verticalmente */
+    justify-content: space-between; /* Para empujar el botón hacia abajo */
+}
+
+/* Estilos para el botón dentro del .item */
+.item button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px; /* Mantuvimos right como lo pediste */
+
+    /* Estilo del botón */
+    background-color:  #221f77; /* Un azul vibrante */
+    color: white; /* Texto blanco para contraste */
+    padding: 10px 20px; /* Relleno interno para un buen tamaño */
+    border: none; /* Sin borde predeterminado */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar por encima */
+    font-size: 16px; /* Tamaño de fuente legible */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Texto en mayúsculas para destacar */
+    letter-spacing: 0.5px; /* Espaciado entre letras para mejor lectura */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para un efecto 3D */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Transiciones suaves para interactividad */
+}
+
+.item button:hover {
+    background-color: #0056b3; /* Un azul más oscuro al pasar el ratón */
+    transform: translateY(-2px); /* Ligeramente hacia arriba */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra un poco más pronunciada */
+}
+
+.item button:active {
+    background-color: #004085; /* Azul aún más oscuro al hacer clic */
+    transform: translateY(0); /* Vuelve a su posición original */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra reducida */
+}
+
+.navbar {
+  background-color: #030053;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #002e53;
+}
+
+/* pie de pagina */
+.item1{
+    padding: auto;
+    text-align: center;
+}
+.pie{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+footer {
+            background-color:#030053;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }

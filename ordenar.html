@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MAR</div>
+            <ul class="nav-links">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="ordenar.html">Ordenar</a></li>
+                <li><a href="postres.html">Postres</a></li>
+            </ul>
+    </nav> 
+
+    <script>
+        const header = document.querySelector('header'); // Selecciona tu header
+        let lastScrollY = window.scrollY; // Guarda la posición de scroll anterior
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100 && window.scrollY > lastScrollY) {
+                // Si el scroll baja más de 100px desde el inicio Y el usuario está bajando
+                header.classList.add('header-hidden');
+            } else if (window.scrollY < lastScrollY) {
+                // Si el usuario está subiendo
+                header.classList.remove('header-hidden');
+            }
+            lastScrollY = window.scrollY; // Actualiza la última posición de scroll
+        });
+    </script>
+    
+    <div class="contenedor">
+        <h2 class="entradas">Entradas</h2>
+        <div class="tipos">
+            <div class="item">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9ISqt_ezNjbzHLRnvnOuQrUU8oTZ7g52hzQdnd0EB_L1A7THf" width="180" height="150">
+                <p>TAPAS DE MARISCOS</p><br><br>
+                <button>Ordenar</button>
+            </div>
+            <div class="item">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvwrXF_-r0WHSdEfHtlOoMmpKjEzXzr9HMsPzWNnYLpm_i-5fE" width="180" height="150">
+                <p>CAMARONES</p><br><br>
+                <button>Ordenar</button>
+            </div>
+            <div class="item">
+                <img src="https://www.laylita.com/recetas/wp-content/uploads/2023/03/Receta-de-las-croquetas-de-cangrejo.jpg" width="180" height="150">
+                <p>ROLLOS DE QUESO</p><br><br>
+                <button>Ordenar</button>
+            </div>
+            <div class="item">
+                <img src="https://tartaruga.com.co/hs-fs/hubfs/Tartaruga-restaurante-mosquera-entradas-empanaditas-tartaruga.png?height=500&name=Tartaruga-restaurante-mosquera-entradas-empanaditas-tartaruga.png" width="180" height="150">
+                <p>EMPANADAS MARINERAS</p><br><br>
+                <button>Ordenar</button>
+            </div>
+        </div>
+
+        <h2 class="entradas">Platos fuertes</h2>
+        <div class="tipos">
+            <div class="item">
+                <img src="https://directoriohoreca.com/sites/default/files/Portada%20de%20art%C3%ADculo.png" width="180" height="150">
+                <p>TINTA DE CALAMAR</p><br><br>
+                <button>Ordenar</button>
+            </div>
+            <div class="item">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPsvrdXzGl6mMjp1PTTpMnxtW-NIOFd2xeOksJtzBlTRrP_EUM" width="180" height="150">
+                <p>ISLA DE SABORES</p><br><br>
+                <button>Ordenar</button>
+            </div>
+            <div class="item">
+                <img src="https://i.pinimg.com/736x/16/e9/db/16e9dbe007f6fc9a177fb0048c04da55.jpg" width="180" height="150">
+                <p>PASTA MARINERA</p><br><br>
+                <button>Ordenar</button>
+            </div>
+            <div class="item">
+                <img src="https://www.hotelvinasqueirolo.com/blog/wp-content/uploads/2023/11/los-platos-mas-deliciosos-de-ica-1066x546.jpg" width="180" height="150">
+                <p>MAR EN CALMA</p><br><br>
+                <button>Ordenar</button>
+            </div>
+            <div class="item">
+                <img src="https://www.recetasnestle.com.co/sites/default/files/2023-03/plato-receta-cazuela-de-mariscos.jpg" width="180" height="150">
+                <p>LANGOSTA AL AJULLI</p><br><br>
+                <button>Ordenar</button>
+            </div>
+            <div class="item">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSv_IYabjjLYNcCJBO86VD6xFZJ6JrQfj57utORrOZ_Y-2uvbV-" width="180" height="150">
+                <p>SALMON DE</p><br><br>
+                <button>Ordenar</button>
+            </div>
+            <div class="item">
+                <img src="https://peru21.pe/sites/default/efsfiles/2023-10/T3ZQW2ON6ZAD5BVJ6LMINEQHOI.png" width="180" height="150">
+                <p>CEVICHE MIXTO</p><br><br>
+                <button>Ordenar</button>
+            </div>
+        </div>
+    
+
+        <h2 class="entradas">Menú infantil</h2>
+        <div class="tipos">
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRpjpl7q4PBFtxmsKCvLptr4b6w8FPUoqohQ&s" width="180" height="150">
+                <p>EL BUHO<br><br>
+                </p> <br><br>
+                <button>Ordenar</button>
+            </div>
+            <div class="item">
+                <img src="https://www.mariscosapolo.com/wp-content/uploads/2014/05/decoratrix2.jpg" width="180" height="150">
+                <p>LA BAILARINA<br><br>
+                 </p><br><br>
+                <button>Ordenar</button>
+            </div>
+            <div class="item">
+                <img src="https://eresmama.com/wp-content/uploads/2023/07/brochetas-de-camarones.jpg" width="180" height="150">
+                <p>PINCHOS CAMARON</p><br>
+                <button>Ordenar</button>
+            </div>
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJb8p4WDB-ydAWeBufI5RWpRADc1Ah1TQPaQ&s" width="180" height="150">
+                <p>CAJA SORPRESA<br> <br>
+                </p><br><br>
+                <button>Ordenar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="pie">
+            <div class="item1">
+                <p>
+                    ¡Gracias por zarpar con nosotros y disfrutar de los sabores del mar! <br>
+                    ¿Tienes alguna pregunta o un antojo especial? <br>
+                    ¡Estamos listos para atenderte! <br>
+                    Preparado con la frescura del océano y mucha pasión.<br>
+                    📍 Bucaramanga, Santander, Colombia<br>
+                </p>
+            </div>
+            <div class="item1">
+                <p>
+                    Encuéntranos en nuestras redes y sumérgete en más delicias: <br>
+                    📸 @MARBGA<br>
+                    💖 facebook.com/MARBGA<br>
+                    📧 hola@MAR.com<br>
+                    TikTok: @MARBGA <br>
+                    @MARBGA
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
